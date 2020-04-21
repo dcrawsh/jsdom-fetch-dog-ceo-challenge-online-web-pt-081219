@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', (event)=> {
             })
         }
     let list = document.getElementById('dog-breeds');
+    
     function addBreedtoList(breed) {
         
         let listItem = document.createElement('li');
