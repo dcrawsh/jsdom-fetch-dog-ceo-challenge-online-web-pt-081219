@@ -62,13 +62,12 @@ document.addEventListener('DOMContentLoaded', (event)=> {
     
     //how to reload list breeds so it can filter more than
     function filterBreeds(choice) {
-        breeds = breeds.filter(breed => breed.startsWith(choice))
-        updateBreedList(breeds);
-        breeds.forEach(breed => addBreedtoList(breed))
-        
+        let filteredBreeds = breeds.filter(breed => breed.startsWith(choice))
+        updateBreedList();
+        filteredBreeds.forEach(breed => addBreedtoList(breed))  
     } 
 
-    function updateBreedList(breeds) {
+    function updateBreedList() {
         removeChildren(list);
     }
 
